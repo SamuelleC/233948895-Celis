@@ -39,17 +39,27 @@ p {
 
 label {
     display: block;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
-
-
 
 input, textarea, select {
     border-radius: 10px;
     border-color: black;
-    width: 92%;
     padding: 7px;
     margin-top: 1%;
+}
+
+input[type="number"], input[type="text"], input[type="email"] {
+    width: 80%;
+}
+textarea {
+    display: block;
+    width: 90%;
+}
+
+select{
+    width: 93%;
 }
 
 fieldset { 

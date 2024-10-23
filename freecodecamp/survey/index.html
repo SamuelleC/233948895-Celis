@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form Celis</title>
+</head>
+<body>
+    <h1 id="title">Survey Form by Samuelle Celis</h1>
+    <p id="description">This is a sample survey form about the daily screen time of the respondent.</p>
+    <div class="form-container">
+        <form action="" id="survey-form">
+            <div class="column-one">
+                <label for="name" id="name-label">First Name<input type="text" id="name" placeholder="John" required></label>
+                <label for="last-name" id="email-label">Last Name<input type="text" id="last-name" placeholder="Doe" required></label>
+            </div>
+            <div class="column-two">
+                <label for="email" id="number-label">Email Address<input type="email" id="email" placeholder="test@email.com" required></label>
+                <label for="number">Contact Number<input type="number" id="number" min="11" max="11" placeholder="xxxxxxxxxxx" required></label>
+            </div>
+            <fieldset>
+                <legend>What device do you use the most?</legend>
+                <label for="desktop-computer"><input type="checkbox" id="desktop-computer" name="device" value="1" checked>Desktop Computer</label>
+                <label for="laptop-computer"><input type="checkbox" id="laptop-computer" name="device" value="2">Laptop</label>
+                <label for="mobile-phone"><input type="checkbox" id="mobile-phone" name="device" value="3">Mobile Phone</label>
+            </fieldset>
+            <label for="dropdown">How many hours a day do you use your device?
+                <select name="dropdown-menu" id="dropdown" required>
+                    <option value="">Select an Option</option>
+                    <option value="1">Less than 2 hours</option>
+                    <option value="2">2 - 4 hours</option>
+                    <option value="3">More than 4 hours</option>
+                </select>
+            </label>
+            <label for="suggestions">Additional Information (Optional)<textarea name="suggestions" id="suggestions" placeholder="More information about my device usage..."></textarea></label>
+            <legend>Do you allow us to use the data that you have given us for study purposes?</legend>
+            <label for="agree"><input type="radio" id="agree"  name="consent" value="1" checked>Agree</label>
+            <label for="disagree"><input type="radio" id="disagree"  name="consent" value="2">Disagree</label>
+            <button id="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+body {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.paragraph-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 10%;
+    gap: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+figcaption {
+    color: black;
+}
+
+#img-div {
+    background-color: white;
+    text-align: center;
+}
+
+#image {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    max-height: auto;
+    width: 300px;
+    height: auto;
+}
+
+.tribute-link {
+    display: block;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+#tribute-link {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+#tribute-link:hover {
+    color: gray;
+    transition: 0.5s;
+}

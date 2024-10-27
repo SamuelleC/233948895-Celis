@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #30302c;
+}
+
+body {
+    font-family: helvetica;
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    background-color: white;
+    padding: 20px 50px;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 10px;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #30302c;
+    font-weight: thin;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+#navbar a:hover {
+    color: gray;
+    transition: 0.2s;
+}
+
+.section-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.section-container h2{
+    font-size: 40px;
+}
+
+.section-container p, li {
+    font-size: 25px;
+    list-style: none;
+}
+
+#welcome-section h1 {
+    font-size: 50px;
+}
+
+#welcome-section h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#welcome-section img {
+    display: flex;
+    position: relative;
+    width: 300px;
+    margin: 50px;
+    border-radius: 50%;
+    filter: grayscale();
+    z-index: -1;
+}
+
+.paragraph-container {
+    width: 60%;
+    border: 2px solid #30302c;
+    border-radius: 30px;
+    padding: 30px;
+    margin: 20px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.project-tile {
+    width: 40%;
+    height: 10%;
+    background-color: #30302c;
+    text-align: center;
+    padding: 30px;
+    border-radius: 30px;
+    margin: 50px;
+    box-shadow: 2px 2px 2px 2px black;
+}
+
+.project-tile a {
+    position: relative;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.project-tile a:hover {
+    color: gray;
+    transition: 0.5s;
+}
+
+.project-tile:hover {
+    transform: scale(0.95);
+    transition: 0.5s;
+}
+
+#contact-section a:hover {
+    font-size: 24px;
+    transition: 0.2s;
+    color: gray;
+}
+
+@media (max-width: 768px) {
+    .section-container h2{
+        font-size: 35px;
+    }
+
+    .project-tile a{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 425px) {
+    #navbar a {
+        font-size: 15px;
+    }
+
+    #navbar li {
+        padding: 5px;
+    }
+
+    .paragraph-container {
+        text-align: center;
+    }
+
+    .project-tile a{
+        font-size: 15px;
+    }
+}

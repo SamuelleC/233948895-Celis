@@ -119,6 +119,17 @@ body {
     color: gray;
 }
 
+footer {
+    background-color: #30302c;
+    font-size: 20px;
+}
+
+footer p { 
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
 @media (max-width: 768px) {
     .section-container h2{
         font-size: 35px;

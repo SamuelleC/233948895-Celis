@@ -226,10 +226,28 @@ footer p {
     #navbar a {
         font-size: 14px;
     }
-}
-
-@media (max-width: 425px) {
     footer p {
         font-size: 16px
+    }
+}
+
+@media (max-width: 320px) {
+    #languages-section {
+        margin-top: 100px;
+    }
+
+    #languages-section h5 {
+        font-size: 14px;
+    }
+
+    #projects-section {
+        margin-top: 100px;
+    }
+    #navbar a {
+        font-size: 12px;
+    }
+
+    #contact-section li {
+        font-size: 20px;
     }
 }

@@ -66,8 +66,6 @@ const locations = [
   }
 ];
 
-
-
 // initialize buttons
 button1.onclick = goStore;
 button2.onclick = goCave;

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Business Landing Page - Celis</title>
+</head>
+<body>
+    <header id="header">
+        <img src="https://static.vecteezy.com/system/resources/previews/014/018/566/non_2x/samsung-logo-on-transparent-background-free-vector.jpg" alt="Samsung Logo" id="header-img">
+        <nav id="nav-bar">
+            <ul>
+                <li><a href="#title" class="nav-link">Product</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="title">
+            <h1>Samsung Galaxy S24 Ultra</h1>
+            <div class="phone-container">
+                <img src="https://images.samsung.com/is/image/samsung/p6pim/ph/2401/gallery/ph-galaxy-s24-s928-sm-s928bztcphl-539303705?$650_519_PNG$" 
+                     alt="Samsung Galaxy S24 Ultra">
+                <div class="product-motto-container">
+                    <h2 class="motto-text">Do What You Can't</h2>
+                    <button class="cta-button">Get Yours Now!</button>
+                </div>  
+            </div>
+        </section>
+
+         <section class="features-container" id="features">
+            <article class="features">
+                <h2>Pro-Grade Camera System</h2>
+                <p>Capture ultra-high resolution photos with a 200MP main camera. Advanced AI enhances sharpness and vibrancy.</p>
+            </article>
+            <article class="features">
+                <h2>Stunning New Display</h2>
+                <p>Enjoy a 6.8-inch QHD+ Dynamic AMOLED 2X display with a 120Hz adaptive refresh rate.</p>
+            </article>
+            <article class="features">
+                <h2>Extended Battery Life</h2>
+                <p>5000mAh battery with intelligent power management for all-day performance.</p>
+            </article>
+        </section>
+
+        <section class="video-container">
+            <iframe id="video" width="700" height="400" src="https://www.youtube.com/embed/ePdbj2bZ-Ro" 
+                    title="Samsung Galaxy S24 Overview" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+            </iframe>
+        </section>
+
+        <section class="contact-container" id="contact">
+            <h2>Stay Updated</h2>
+            <p>Send us your email to receive the latest Samsung news.</p>
+            <form action="https://www.freecodecamp.com/email-submit" id="form" target="_blank">
+                <input type="email" name="email" id="email" placeholder="test@email.com" required>
+                <input type="submit" id="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+</body>
+</html>

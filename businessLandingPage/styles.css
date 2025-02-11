@@ -5,6 +5,10 @@
     font-family: Verdana, Tahoma, sans-serif;
 }
 
+html::-webkit-scrollbar {
+    display: none;
+}
+
 body {
     background: url('https://images.unsplash.com/photo-1517816743773-6e0fd518b4a6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') 
         no-repeat center center fixed;
@@ -23,6 +27,7 @@ body {
     padding: 0 50px;
     background-color: white;
     z-index: 100;
+    box-shadow: 2px 2px 2px black;
 }
 
 #header-img {
@@ -61,6 +66,7 @@ h1 {
     color: #fff;
     font-size: 18px;
     padding: 12px 24px;
+    margin: 20px 0;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -72,7 +78,7 @@ h1 {
 }
 
 .motto-text {
-    font-size: 24px;
+    font-size: 46px;
 }
 
 .phone-container {
@@ -110,12 +116,6 @@ h1 {
     padding-top: 20px;
 }
 
-.video-container {
-    display: flex;
-    justify-content: center;
-    margin: 20px auto;
-}
-
 .contact-container {
     margin: 100px auto;
     text-align: center;
@@ -130,6 +130,10 @@ h1 {
     border-radius: 25px;
     padding: 10px;
     text-align: center;
+}
+
+#message {
+    height: 124px;
 }
 
 #submit {

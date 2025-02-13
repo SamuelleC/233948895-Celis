@@ -24,6 +24,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
+    height: 6%;
     padding: 0 50px;
     background-color: white;
     z-index: 100;
@@ -32,6 +33,7 @@ body {
 
 #header-img {
     width: 10%;
+    padding: 24px;
 }
 
 nav ul {
@@ -151,6 +153,72 @@ h1 {
     background-color: white;
     border: 2px solid black;
     color: black;
+}
+
+.product-screen-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #e5e5e5 ;
+    padding: 24px 0;
+}
+
+.category-container {
+    display: flex;
+    position: relative;
+    justify-content: left;
+    text-align: left;
+    padding: 24px;
+    flex-direction: column;
+    height: 100%;
+    width: 20%;
+    background-color: white;
+    box-shadow: 2px 2px 2px black;
+}
+
+.category-container li {
+    font-size: 18px;
+    padding: 24px 0;
+    text-align: left;
+    list-style-type: none;
+}
+
+.category-container li:hover{
+    border-bottom: 2px solid black ;
+}
+
+
+.category-container a {
+    color: black;
+    text-decoration: none;
+    
+}
+
+.category-container a:hover {
+    color: gray;
+}
+
+.product-image-container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    background-color: white;
+    width: 40%;
+    height: 100%;
+    border-radius: 24px;
+    box-shadow: 2px 2px 2px black;
+}
+
+.product-description-container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    background-color: white;
+    width: 30%;
+    margin: 0 20px;
+    padding: 24px;
+    border-radius: 24px;
+    box-shadow: 2px 2px 2px black;
 }
 
 @media (max-width: 1024px) {

@@ -20,5 +20,25 @@
         echo 'The product is: '.$product ."\n";
         echo 'The quotient is: '.$quotient;
     ?>
+    //Exercise 2
+    <?php
+        $number = 15;
+        
+        if ($number > 0) {
+            if ($number % 2 == 0) {
+                echo "The number " .$number . " is even and positive.";
+            } else {
+                echo "The number " .$number ." is odd and positive.";
+            }
+        } else if ($number < 0) {
+            if ($number % 2 == 0) {
+                echo "The number " .$number . " is even and negative.";
+            } else {
+                echo "The number " .$number ." is odd and negative.";
+            }
+        } else {
+            echo "The number " .$number ." is zero.";
+        }
+    ?>
 </body>
 </html>

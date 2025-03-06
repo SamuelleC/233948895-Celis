@@ -7,6 +7,7 @@
 </head>
 <body>
     <?php
+        //Exercise 1
         $a = 15;
         $b = 7;
         
@@ -20,8 +21,9 @@
         echo 'The product is: '.$product ."\n";
         echo 'The quotient is: '.$quotient;
     ?>
-    //Exercise 2
+    
     <?php
+        //Exercise 2    
         $number = 15;
         
         if ($number > 0) {
@@ -40,5 +42,34 @@
             echo "The number " .$number ." is zero.";
         }
     ?>
+
+    <?php
+    //Exercise 3
+    //Fizz on multiples of 3, Buzz on multiples of 5, FizzBuzz on multiples of Both
+    for ($i = 1; $i <=100; $i++) {
+        if ($i % 3 == 0 && $i % 5 == 0) {
+            echo "FizzBuzz"."\n";
+        } else if  ($i % 3 == 0) {
+            echo "Fizz"."\n";
+        } else if ($i % 5 == 0) {
+            echo "Buzz"."\n";
+        } else {
+            echo $i."\n";
+        }
+    }
+    //Fibonacci Sequence
+    echo "\n"; 
+    echo "First 10 in the Fibonacci Sequence but only the even numbers will be printed \n"; 
+    $num1 = 0;
+    $num2= 1;
+    for ($i = 0; $i <10; $i++) {
+        if ($num1 % 2 == 0) {
+            echo $num1."\n";
+        } 
+        $num3 = $num1 + $num2;
+        $num1 = $num2;
+        $num2 = $num3;
+    }
+?>
 </body>
 </html>

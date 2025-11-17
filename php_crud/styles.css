@@ -1,0 +1,190 @@
+/* ---- Global Reset ---- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #191919;
+    padding: 40px;
+}
+
+/* ---- Container ---- */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+}
+
+/* ---- Header ---- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+header h2 {
+    color: #333;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+/* ---- Buttons ---- */
+.btn {
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.2s ease-in-out;
+}
+
+.add-btn {
+    background: #65B571;
+    color: #fff;
+}
+
+.add-btn:hover {
+    background: #43a047;
+}
+
+.edit-btn {
+    background: #BAB1B1;
+    color: #fff;
+}
+
+.edit-btn:hover {
+    background: #191919
+}
+
+.delete-btn {
+    background: #A88383;
+    color: #fff;
+}
+
+.delete-btn:hover {
+    background: #D14747;
+}
+
+/* ---- Table Styles ---- */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.styled-table thead tr {
+    background: #D14747;
+    color: #fff;
+    text-align: left;
+}
+
+.styled-table th, 
+.styled-table td {
+    padding: 12px 15px;
+    font-size: 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background: #f9f9f9;
+}
+
+.styled-table tbody tr:hover {
+    background: #eef1ff;
+}
+
+/* ---- Add User Window ---- */
+.form_window {
+    max-width: 450px;
+    margin: 60px auto;
+    background: #fff;
+    padding: 35px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.15);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.form_window h2 {
+    text-align: center;
+    background: #D14747;
+    color: #fff;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+}
+
+/* ---- Form Styles ---- */
+.user_form label {
+    display: block;
+    margin-bottom: 6px;
+    color: #333;
+    font-weight: 600;
+}
+
+.user_form input {
+    width: 100%;
+    padding: 11px;
+    margin-bottom: 18px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: 0.2s ease-in-out;
+}
+
+.user_form input:focus {
+    border-color: #D14747;
+    box-shadow: 0 0 4px rgba(209, 71, 71, 0.4);
+}
+
+/* ---- Save Button ---- */
+.save-btn {
+    width: 100%;
+    background: #65B571;
+    color: #fff;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.save-btn:hover {
+    background: #43a047;
+}
+
+.back-btn {
+    width: 100%;
+    background: #BAB1B1;
+    color: #fff;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.back-btn:hover {
+    background: #B8B8B8;
+}
+
+/* ---- Fade Animation ---- */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
